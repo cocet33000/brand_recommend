@@ -1,1 +1,5 @@
-# brand_recommend
+#使い方
+
+```
+$python -i main.py
+```
