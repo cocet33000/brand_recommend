@@ -2,6 +2,7 @@
 
 import re
 
+import numpy as np
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd

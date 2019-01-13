@@ -2,6 +2,7 @@
 
 import re
 
+import numpy as np
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -10,7 +11,7 @@ import collections
 
 def bays(model, A, B=None):
     pB = (model == B).sum().sum()
-    pAB = (((df == A) | (df == B)).sum(axis=1) > 1).sum()
+    pAB = (((model == A) | (model == B)).sum(axis=1) > 1).sum()
     return pAB / pB
 
 

@@ -30,3 +30,4 @@ if __name__ == '__main__':
     brand = getuniqueList(df)
     brand_df = pd.DataFrame(index=list(brand.keys()),
                             data=list(brand.values()))
+    brand_df = brand_df.drop(np.nan) # NAN　を削除
