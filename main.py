@@ -1,5 +1,6 @@
 from scrayping import *
 from predict import *
+from predict2 import *
 
 if __name__ == '__main__':
     flag = True
